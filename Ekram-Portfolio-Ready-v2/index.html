@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ekram | Google Ads Specialist</title>
+<meta name="description" content="EKRAMUL ISLAM (EKRAM) — Google Ads Specialist. Data-driven paid advertising and lead generation.">
+
+<style>
+:root{
+  --bg:#050505; --bg2:#0a0a0a; --card:#101010; --card2:#151515;
+  --red:#ff3030; --red2:#ff5555; --white:#fff; --text:#e9e9e9;
+  --muted:#929292; --line:rgba(255,255,255,.10);
+  --max:1180px;
+}
+*{box-sizing:border-box;margin:0;padding:0;scroll-behavior:smooth}
+html{scroll-padding-top:82px}
+body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--bg);color:var(--text);line-height:1.65;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;background:radial-gradient(circle at 85% 15%,rgba(255,48,48,.08),transparent 28%),radial-gradient(circle at 15% 70%,rgba(255,48,48,.035),transparent 25%);z-index:-1}
+a{text-decoration:none;color:inherit}
+button,input,textarea{font:inherit}
+.container{width:min(var(--max),92%);margin:auto}
+section{padding:110px 0}
+header{position:fixed;top:0;left:0;width:100%;z-index:1000;background:rgba(5,5,5,.82);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+nav{height:76px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-weight:900;font-size:25px;letter-spacing:-1.5px}
+.logo span,.accent{color:var(--red)}
+.nav-links{display:flex;gap:30px;list-style:none}
+.nav-links a{font-size:13px;color:#aaa;transition:.25s}
+.nav-links a:hover{color:#fff}
+.menu{display:none;cursor:pointer;font-size:22px}
+.hero{min-height:100vh;padding-top:76px;display:flex;align-items:center;position:relative}
+.hero-grid{display:grid;grid-template-columns:1.08fr .92fr;align-items:center;gap:60px}
+.badge{display:inline-flex;align-items:center;gap:9px;border:1px solid rgba(255,48,48,.32);background:rgba(255,48,48,.06);padding:7px 13px;border-radius:999px;color:#ff8a8a;font-size:12px;margin-bottom:24px}
+.badge i{width:7px;height:7px;border-radius:50%;background:var(--red);box-shadow:0 0 12px var(--red)}
+.hero h1{font-size:clamp(50px,7vw,88px);line-height:.98;letter-spacing:-4px;font-weight:900;max-width:850px}
+.hero h1 span{color:var(--red)}
+.hero-copy{max-width:650px;color:var(--muted);font-size:17px;margin:26px 0 34px}
+.buttons{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border:1px solid var(--line);border-radius:8px;padding:13px 20px;font-size:13px;font-weight:750;transition:.25s;cursor:pointer}
+.btn-primary{background:var(--red);border-color:var(--red);color:#fff}
+.btn-primary:hover{transform:translateY(-3px);box-shadow:0 14px 35px rgba(255,48,48,.22)}
+.btn-outline:hover{border-color:var(--red);transform:translateY(-3px)}
+.hero-photo{position:relative;display:flex;justify-content:center}
+.hero-photo:before{content:"";position:absolute;width:360px;height:360px;background:var(--red);filter:blur(100px);opacity:.14;border-radius:50%}
+.hero-photo img{position:relative;width:min(430px,100%);height:535px;object-fit:cover;object-position:center top;border-radius:20px;border:1px solid rgba(255,48,48,.35);box-shadow:0 30px 90px rgba(0,0,0,.7),0 0 0 8px rgba(255,48,48,.025)}
+.section-head{max-width:720px}
+.label{color:var(--red);font-size:11px;text-transform:uppercase;letter-spacing:2.5px;font-weight:850;margin-bottom:9px}
+.title{font-size:clamp(36px,5vw,57px);line-height:1.05;letter-spacing:-2.5px;font-weight:900}
+.subtitle{color:var(--muted);max-width:650px;margin-top:14px}
+.about-grid{margin-top:52px;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.about-text p{color:#aaa;margin-bottom:18px}
+.about-text strong{color:#fff}
+.about-card{background:linear-gradient(145deg,#151515,#090909);border:1px solid var(--line);border-radius:16px;padding:30px}
+.about-card h3{font-size:24px;margin-bottom:18px}
+.info{display:flex;justify-content:space-between;gap:20px;padding:13px 0;border-bottom:1px solid var(--line);font-size:13px}
+.info:last-child{border-bottom:0}
+.info span:first-child{color:#707070}
+.info span:last-child{text-align:right;color:#eee}
+.services{margin-top:52px;display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.service{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:29px;transition:.3s}
+.service:hover{transform:translateY(-7px);border-color:rgba(255,48,48,.4);background:var(--card2)}
+.icon svg{width:24px;height:24px;display:block}.contact-icon svg{width:21px;height:21px;display:block}.socials a svg{width:18px;height:18px;display:block}.float-wa svg{width:25px;height:25px;display:block}.icon{width:48px;height:48px;display:grid;place-items:center;border-radius:10px;background:rgba(255,48,48,.1);color:var(--red);font-weight:900;font-size:20px;margin-bottom:19px}
+.service h3{font-size:18px;margin-bottom:9px}
+.service p{font-size:13px;color:var(--muted)}
+.stats{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:44px 0}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;text-align:center}
+.stat h3{font-size:31px;letter-spacing:-1px}
+.stat p{color:#737373;font-size:12px;margin-top:3px}
+.portfolio{margin-top:52px;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.project{background:var(--card);border:1px solid var(--line);border-radius:15px;overflow:hidden;transition:.3s}
+.project:hover{transform:translateY(-6px);border-color:rgba(255,48,48,.4)}
+.project-image{height:235px;overflow:hidden;background:#0d0d0d;cursor:pointer;position:relative}
+.project-image img{width:100%;height:100%;object-fit:cover;transition:.45s}
+.project:hover .project-image img{transform:scale(1.035)}
+.project-image:after{content:"Click to view";position:absolute;right:12px;bottom:12px;background:rgba(0,0,0,.72);border:1px solid rgba(255,255,255,.12);padding:5px 8px;border-radius:6px;font-size:10px;color:#ddd}
+.project-content{padding:22px}
+.project-content h3{font-size:18px}
+.project-content p{color:var(--muted);font-size:12.5px;margin:7px 0 15px}
+.metrics{display:flex;flex-wrap:wrap;gap:7px}
+.metrics span{background:#1b1b1b;border:1px solid rgba(255,255,255,.05);border-radius:6px;padding:5px 8px;font-size:10px;color:#c8c8c8}
+.contact-grid{margin-top:52px;display:grid;grid-template-columns:.8fr 1.2fr;gap:45px}
+.contact-info>p{color:var(--muted);margin-bottom:25px}
+.contact-item{display:flex;align-items:center;gap:13px;margin-bottom:17px}
+.contact-icon{width:43px;height:43px;display:grid;place-items:center;border:1px solid var(--line);border-radius:9px;color:var(--red);font-weight:900}
+.contact-item small{display:block;color:#666;font-size:10px}
+.contact-item span{font-size:13px}
+.socials{display:flex;gap:9px;margin-top:25px}
+.socials a{width:42px;height:42px;display:grid;place-items:center;border:1px solid var(--line);border-radius:9px;font-size:12px;font-weight:800;transition:.25s}
+.socials a:hover{border-color:var(--red);color:var(--red);transform:translateY(-3px)}
+.form{background:var(--card);border:1px solid var(--line);border-radius:15px;padding:29px}
+.form-group{margin-bottom:15px}
+.form-group label{display:block;color:#aaa;font-size:11px;margin-bottom:6px}
+input,textarea{width:100%;background:#080808;color:#fff;border:1px solid var(--line);border-radius:8px;padding:12px 13px;outline:0}
+input:focus,textarea:focus{border-color:var(--red)}
+textarea{min-height:125px;resize:vertical}
+footer{border-top:1px solid var(--line);padding:30px 0;text-align:center;color:#666;font-size:11px}
+footer span{color:var(--red)}
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .75s ease,transform .75s ease}
+.reveal.show{opacity:1;transform:none}
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.9);display:none;align-items:center;justify-content:center;padding:25px;z-index:2000}
+.modal.open{display:flex}
+.modal-box{max-width:1200px;width:100%;max-height:92vh;position:relative}
+.modal-box img{display:block;width:100%;max-height:88vh;object-fit:contain;border:1px solid var(--line);border-radius:10px;background:#050505}
+.modal-close{position:absolute;right:-5px;top:-48px;width:38px;height:38px;border:1px solid var(--line);background:#111;color:#fff;border-radius:8px;cursor:pointer;font-size:20px}
+.float-wa{position:fixed;right:22px;bottom:22px;width:53px;height:53px;border-radius:50%;display:grid;place-items:center;background:#18b957;color:#fff;font-size:23px;box-shadow:0 12px 30px rgba(0,0,0,.45);z-index:900}
+@media(max-width:950px){
+  .hero-grid{grid-template-columns:1fr;gap:45px}
+  .hero-photo{order:2}
+  .hero-photo img{height:470px;width:min(380px,90%)}
+  .services{grid-template-columns:repeat(2,1fr)}
+  .portfolio{grid-template-columns:1fr 1fr}
+}
+@media(max-width:700px){
+  section{padding:82px 0}
+  .nav-links{display:none;position:absolute;left:0;top:76px;width:100%;background:#080808;flex-direction:column;gap:0;border-bottom:1px solid var(--line)}
+  .nav-links.active{display:flex}
+  .nav-links li{padding:14px 5%;border-bottom:1px solid var(--line)}
+  .menu{display:block}
+  .hero h1{letter-spacing:-2.5px}
+  .hero-copy{font-size:15px}
+  .about-grid,.contact-grid,.portfolio{grid-template-columns:1fr}
+  .services{grid-template-columns:1fr}
+  .stats-grid{grid-template-columns:1fr 1fr}
+  .project-image{height:255px}
+}
+</style>
+</head>
+
+<body>
+<header>
+  <div class="container">
+    <nav>
+      <a class="logo" href="#home">EKR<span>AM.</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="menu" id="menuBtn">☰</div>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-copy-wrap reveal">
+        <div class="badge"><i></i> Available for new projects</div>
+        <h1>Google Ads<br><span>That Drive Results.</span></h1>
+        <p class="hero-copy">I'm Ekram, a Google Ads specialist helping businesses reach the right audience, generate quality leads and grow through smart, data-driven advertising.</p>
+        <div class="buttons">
+          <a class="btn btn-primary" href="#portfolio">View My Work →</a>
+          <a class="btn btn-outline" href="#contact">Let's Talk</a>
+        </div>
+      </div>
+      <div class="hero-photo reveal">
+        <img src="images/profile.png" alt="EKRAMUL ISLAM (EKRAM)">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="label">About Me</div>
+      <h2 class="title">A little about me.</h2>
+      <p class="subtitle">Strategy, data and creativity — combined to build advertising campaigns around real business goals.</p>
+    </div>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>Hi, I'm <strong>EKRAMUL ISLAM (EKRAM)</strong>. I'm a Google Ads specialist focused on helping businesses generate visibility, qualified traffic and leads through paid advertising.</p>
+        <p>My approach is simple: understand the business, understand the audience, build the right campaign, and optimize it using real data.</p>
+        <p>From keyword research and campaign setup to ad copy, conversion tracking and optimization, I focus on building campaigns that support actual business goals.</p>
+      </div>
+      <div class="about-card reveal">
+        <h3>What I Focus On</h3>
+        <div class="info"><span>Specialization</span><span>Google Ads</span></div>
+        <div class="info"><span>Campaigns</span><span>Search · Display · Performance Max</span></div>
+        <div class="info"><span>Approach</span><span>Data Driven</span></div>
+        <div class="info"><span>Goal</span><span>Quality Leads</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="label">Services</div>
+      <h2 class="title">What I can do for you.</h2>
+      <p class="subtitle">Everything you need to build, launch and improve your Google Ads campaigns.</p>
+    </div>
+    <div class="services">
+      <article class="service reveal"><div class="icon" aria-label="Google Ads"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M21.35 11.1H12v3.8h5.35c-.5 2.45-2.72 4.18-5.35 4.18A7.08 7.08 0 1 1 12 4.92c1.75 0 3.35.64 4.58 1.7l2.72-2.72A10.95 10.95 0 0 0 12 1.15a10.85 10.85 0 1 0 0 21.7c6.27 0 10.42-4.4 10.42-10.6 0-.7-.08-1.35-.2-1.95Z"/></svg></div><h3>Google Search Ads</h3><p>Reach people actively searching for your products or services with targeted search campaigns.</p></article>
+      <article class="service reveal"><div class="icon" aria-label="Campaign Optimization"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" d="M4 17l6-6 4 4 6-8"/><path fill="none" stroke="currentColor" stroke-width="2" d="M15 7h5v5"/></svg></div><h3>Campaign Optimization</h3><p>Analyze campaign data and continuously improve performance and efficiency.</p></article>
+      <article class="service reveal"><div class="icon" aria-label="Keyword Research"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M16 16l5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div><h3>Keyword Research</h3><p>Find relevant keywords based on search intent, competition and business goals.</p></article>
+      <article class="service reveal"><div class="icon" aria-label="Conversion Tracking"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="3" fill="currentColor"/></svg></div><h3>Conversion Tracking</h3><p>Track meaningful actions and use conversion data to make smarter campaign decisions.</p></article>
+      <article class="service reveal"><div class="icon" aria-label="Ad Copy"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 17.5V20h2.5L18.8 7.7l-2.5-2.5L4 17.5Z" fill="none" stroke="currentColor" stroke-width="2"/><path d="M14.8 6.2l2.5 2.5M4 20l4.2-1.2" fill="none" stroke="currentColor" stroke-width="2"/></svg></div><h3>Ad Copy</h3><p>Write relevant and compelling messaging based on customer search intent.</p></article>
+      <article class="service reveal"><div class="icon" aria-label="Performance Analysis"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19V10M12 19V5M19 19v-7" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg></div><h3>Performance Analysis</h3><p>Turn campaign data into clear insights and practical optimization decisions.</p></article>
+    </div>
+  </div>
+</section>
+
+<div class="stats">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat reveal"><h3>Google <span class="accent">Ads</span></h3><p>Specialized</p></div>
+      <div class="stat reveal"><h3>Data <span class="accent">+</span></h3><p>Strategy</p></div>
+      <div class="stat reveal"><h3>ROI <span class="accent">↑</span></h3><p>Focused</p></div>
+      <div class="stat reveal"><h3>100<span class="accent">%</span></h3><p>Commitment</p></div>
+    </div>
+  </div>
+</div>
+
+<section id="portfolio">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="label">Portfolio</div>
+      <h2 class="title">Selected work.</h2>
+      <p class="subtitle">A selection of Google Ads campaign work. Click any screenshot to view it larger.</p>
+    </div>
+
+    <div class="portfolio">
+      <article class="project reveal">
+        <div class="project-image" data-image="images/project-1.png"><img src="images/project-1.png" alt="Google Ads campaign — 149 clicks"></div>
+        <div class="project-content">
+          <h3>Google Ads Campaign</h3>
+          <p>Campaign performance overview with traffic and cost metrics.</p>
+          <div class="metrics"><span>149 Clicks</span><span>3.62% CTR</span><span>€1.22 Avg. CPC</span><span>€183 Cost</span></div>
+        </div>
+      </article>
+
+      <article class="project reveal">
+        <div class="project-image" data-image="images/project-2.png"><img src="images/project-2.png" alt="Google Ads campaign — 685 clicks"></div>
+        <div class="project-content">
+          <h3>Google Ads Campaign</h3>
+          <p>Campaign overview showing traffic volume, impressions and spend.</p>
+          <div class="metrics"><span>685 Clicks</span><span>36.1K Impressions</span><span>$0.60 Avg. CPC</span><span>$409 Cost</span></div>
+        </div>
+      </article>
+
+      <article class="project reveal">
+        <div class="project-image" data-image="images/project-3.png"><img src="images/project-3.png" alt="Google Ads campaign — 303 conversions"></div>
+        <div class="project-content">
+          <h3>Conversion Campaign</h3>
+          <p>Campaign overview focused on clicks, conversions and conversion rate.</p>
+          <div class="metrics"><span>1.48K Clicks</span><span>303 Conversions</span><span>20.42% Conv. Rate</span><span>$3.91K Cost</span></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="label">Contact</div>
+      <h2 class="title">Let's work together.</h2>
+      <p class="subtitle">Have a project in mind? Get in touch and let's discuss how Google Ads can help your business.</p>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <p>You can contact me through any of the platforms below.</p>
+
+        <a class="contact-item" href="mailto:ekramul21431@gmail.com">
+          <div class="contact-icon" aria-label="Email"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="m4 7 8 6 8-6" fill="none" stroke="currentColor" stroke-width="2"/></svg></div>
+          <div><small>Email</small><span>ekramul21431@gmail.com</span></div>
+        </a>
+
+        <a class="contact-item" href="https://wa.me/8801817410030" target="_blank" rel="noopener">
+          <div class="contact-icon" aria-label="WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 11.6A8 8 0 0 1 8.2 19L4 20l1-4.1A8 8 0 1 1 20 11.6Z" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8.5 8.5c.4 2 2 3.8 4 4.5.7.2 1.2-.1 1.5-.7l.4-.8-1.6-.8-.5.7c-1-.4-1.8-1.2-2.2-2.2l.7-.5-.8-1.6-.8.4c-.6.3-.9.8-.7 1.5Z" fill="currentColor"/></svg></div>
+          <div><small>WhatsApp</small><span>+880 1817410030</span></div>
+        </a>
+
+        <div class="socials">
+          <a href="https://www.facebook.com/ekramulislam.69" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M14 8h3V4.5c-.5-.1-1.8-.2-3.3-.2-3.3 0-5.5 2-5.5 5.6V13H5v4h3.2v6h4v-6h3.3l.5-4h-3.8V10c0-1.2.3-2 1.8-2Z"/></svg></a>
+          <a href="https://www.linkedin.com/in/ekramul-islam-ekram/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.2 8H2.5v12h3.7V8ZM4.35 2a2.15 2.15 0 1 0 0 4.3A2.15 2.15 0 0 0 4.35 2ZM21.5 13.1c0-3.6-1.9-5.3-4.5-5.3-2.1 0-3 1.2-3.5 2v-1.8H9.8V20h3.7v-6c0-1.6.3-3.2 2.3-3.2 2 0 2 1.9 2 3.3V20h3.7v-6.9Z"/></svg></a>
+          <a href="https://wa.me/8801817410030" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 11.6A8 8 0 0 1 8.2 19L4 20l1-4.1A8 8 0 1 1 20 11.6Z" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8.5 8.5c.4 2 2 3.8 4 4.5.7.2 1.2-.1 1.5-.7l.4-.8-1.6-.8-.5.7c-1-.4-1.8-1.2-2.2-2.2l.7-.5-.8-1.6-.8.4c-.6.3-.9.8-.7 1.5Z" fill="currentColor"/></svg></a>
+          <a href="mailto:ekramul21431@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="m4 7 8 6 8-6" fill="none" stroke="currentColor" stroke-width="2"/></svg></a>
+        </div>
+      </div>
+
+      <div class="form reveal">
+        <form id="contactForm">
+          <div class="form-group"><label>Your Name</label><input id="name" type="text" placeholder="Your name" required></div>
+          <div class="form-group"><label>Email Address</label><input id="email" type="email" placeholder="you@example.com" required></div>
+          <div class="form-group"><label>Message</label><textarea id="message" placeholder="Tell me about your project..." required></textarea></div>
+          <button class="btn btn-primary" type="submit">Send Message →</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>© <span id="year"></span> EKRAMUL ISLAM (EKRAM). All rights reserved.</footer>
+
+<a class="float-wa" href="https://wa.me/8801817410030" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 11.6A8 8 0 0 1 8.2 19L4 20l1-4.1A8 8 0 1 1 20 11.6Z" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8.5 8.5c.4 2 2 3.8 4 4.5.7.2 1.2-.1 1.5-.7l.4-.8-1.6-.8-.5.7c-1-.4-1.8-1.2-2.2-2.2l.7-.5-.8-1.6-.8.4c-.6.3-.9.8-.7 1.5Z" fill="currentColor"/></svg></a>
+
+<div class="modal" id="modal">
+  <div class="modal-box">
+    <button class="modal-close" id="modalClose">×</button>
+    <img id="modalImg" src="" alt="Portfolio screenshot">
+  </div>
+</div>
+
+<script>
+const nav = document.getElementById('navLinks');
+document.getElementById('menuBtn').addEventListener('click',()=>nav.classList.toggle('active'));
+document.querySelectorAll('.nav-links a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('active')));
+
+const observer = new IntersectionObserver(entries=>{
+  entries.forEach(entry=>{ if(entry.isIntersecting) entry.target.classList.add('show'); });
+},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+
+document.getElementById('year').textContent = new Date().getFullYear();
+
+const modal = document.getElementById('modal');
+const modalImg = document.getElementById('modalImg');
+document.querySelectorAll('.project-image').forEach(card=>{
+  card.addEventListener('click',()=>{
+    modalImg.src = card.dataset.image;
+    modal.classList.add('open');
+  });
+});
+function closeModal(){ modal.classList.remove('open'); modalImg.src=''; }
+document.getElementById('modalClose').addEventListener('click',closeModal);
+modal.addEventListener('click',e=>{ if(e.target===modal) closeModal(); });
+document.addEventListener('keydown',e=>{ if(e.key==='Escape') closeModal(); });
+
+document.getElementById('contactForm').addEventListener('submit',e=>{
+  e.preventDefault();
+  const name = document.getElementById('name').value.trim();
+  const email = document.getElementById('email').value.trim();
+  const message = document.getElementById('message').value.trim();
+  const subject = encodeURIComponent('Portfolio Inquiry from '+name);
+  const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`);
+  window.location.href = `mailto:ekramul21431@gmail.com?subject=${subject}&body=${body}`;
+});
+</script>
+</body>
+</html>
